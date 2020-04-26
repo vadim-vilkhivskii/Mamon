@@ -1,0 +1,218 @@
+@import "all.css";
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.header {
+  width: 100%;
+  max-width: 1211px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 53px 15px 0;
+  box-sizing: border-box;
+  font-weight: 700;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+    .logo_img {
+      background-image: url("../images/logo.svg");
+      width: 58px;
+      height: 58px;
+      margin-right: 26px;
+    }
+
+    .logo_text {
+      font-size: 24px;
+      line-height: 28px;
+      color: #202020;
+    }
+  }
+
+  .nav {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px;
+
+    .nav_btn {
+      background: #5528FF;
+      border-radius: 5px;
+      color: #fff;
+      padding: 10px 15px;
+
+    }
+
+    li {
+      margin-left: 15px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #202020;
+    }
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1180px;
+  margin: auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+
+.page {
+  padding: 40px 0;
+  position: relative;
+
+  .page_btn {
+    background: #5528FF;
+    border-radius: 10px;
+    color: #fff;
+    padding: 15px 45px;
+    font-size: 24px;
+    text-decoration: none;
+  }
+
+  .title-main {
+    font-size: 55px;
+    color: #202020;
+    font-weight: 700;
+  }
+
+  .text-main {
+    font-size: 32px;
+    line-height: 1.5;
+    color: #4f4f4f;
+  }
+}
+
+.our-services {
+  border-top: solid 1px #C2C2C2;
+
+  h2 {
+    position: absolute;
+    color: #C2C2C2;
+    font-size: 14px;
+    font-weight: 300;
+    background-color: #ffffff;
+    padding: 5px 15px;
+    top: -24px;
+  }
+
+  .services {
+    display: grid;
+    grid-template: 50% 50% / 50% 50%;
+
+    .services-item {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      .services-img {
+        flex-basis: 120px;
+        text-align: center;
+      }
+
+      .services-text {
+        flex-basis: calc(100% - 120px);
+      }
+    }
+
+    h3 {
+      font-size: 28px;
+      font-weight: 400;
+    }
+
+    p {
+      font-size: 14px;
+      color: #b2b2b2;
+      line-height: 1.5;
+    }
+  }
+}
+
+.our-clients {
+  border-top: solid 1px #C2C2C2;
+
+  h2 {
+    position: absolute;
+    color: #C2C2C2;
+    font-size: 14px;
+    font-weight: 300;
+    background-color: #ffffff;
+    padding: 5px 15px;
+    top: -24px;
+  }
+
+  .clients {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(4, 25%);
+    grid-row-gap: 40px;
+    text-align: center;
+  }
+}
+
+.our-team {
+  border-top: solid 1px #C2C2C2;
+
+  h2 {
+    position: absolute;
+    color: #C2C2C2;
+    font-size: 14px;
+    font-weight: 300;
+    background-color: #ffffff;
+    padding: 5px 15px;
+    top: -24px;
+  }
+
+  .team {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 33%);
+    grid-row-gap: 40px;
+
+    .team-item {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      img {
+        margin-right: 20px;
+      }
+
+      div {
+        flex-basis: calc(100% - 100);
+      }
+    }
+  }
+}
+.footer{
+  background: #F7F7F7;
+  padding: 20px 0;
+  .box-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .social{
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    li{
+      margin-left: 15px;
+      a{
+
+        text-decoration: none;
+        color: #b2b2b2;
+        font-size: 24px;
+      }
+    }
+  }
+}
